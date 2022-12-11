@@ -1,0 +1,158 @@
+.about {
+  padding: 3rem 0rem;
+  width: 33.33333%;
+  /* border: 1px solid; */
+  transition: all 0.2s;
+}
+
+.about-heading {
+  margin: 0rem 0rem 1.5rem;
+  line-height: 1.25;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.about-profile-image {
+  margin: 1.5rem 0rem 1.5rem 5px;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  outline: 0.1rem solid rgb(225, 222, 222);
+  outline-offset: 4px;
+  box-shadow: 0 0 4px 0 rgb(46 62 72 / 12%), 0 4px 12px 0 rgb(46 62 72 / 12%);
+  transition: all 0.2s;
+}
+
+.about-bio {
+  margin: 1rem 0rem;
+  color: var(--secondary-color);
+  text-align: left;
+  transition: all 0.2s;
+}
+.about-info-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: block;
+  margin: 0.2rem 0rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.link-bar {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0rem 0.4rem;
+  border: 1px solid rgb(225, 222, 222);
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+
+.info-link.active {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.info-link.active > .link-bar {
+  border-color: var(--primary-color);
+}
+
+.about-media-links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0rem;
+  transition: all 0.2s;
+}
+
+.about-media-link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0.2rem 0.4rem;
+  transition: all 0.2s;
+}
+
+.about-media-link-icon {
+  vertical-align: middle;
+}
+
+.about-media-link-text {
+  margin-left: 0.2rem;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+.about-media-link:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 80rem) {
+  .about {
+    padding: 2rem 0rem;
+  }
+  .about-heading {
+    margin: 0rem 0rem 1rem;
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+  .about-profile-image {
+    margin: 1rem 0rem 1rem 5px;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 64rem) {
+  .about {
+    width: 100%;
+    text-align: center;
+  }
+  .about-heading {
+    text-align: center;
+    margin: 0rem auto;
+    max-width: 40rem;
+  }
+  .about-profile-image {
+    margin: 1rem auto;
+  }
+  .about-bio {
+    text-align: center;
+    max-width: 32rem;
+    margin: 1rem auto;
+  }
+  .about-info-links {
+    display: none;
+  }
+  .about-media-links {
+    justify-content: center;
+    margin: 0rem auto;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .about {
+    padding: 1.5rem 0rem;
+  }
+  .about-heading {
+    font-size: 2rem;
+  }
+  .about-profile-image {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .about-media-link {
+    margin: 0.4rem;
+  }
+}

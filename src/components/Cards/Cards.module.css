@@ -1,0 +1,19 @@
+.cards {
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.2s;
+} 
+
+@media screen and (max-width: 64rem) {
+  .cards {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .cards {
+    margin-bottom: 0rem;
+  }
+}

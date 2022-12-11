@@ -1,0 +1,52 @@
+.main-container {
+  border-left: 0.1rem solid rgb(225, 222, 222);
+  border-right: 0.1rem solid rgb(225, 222, 222);
+  max-width: 80rem;
+  margin: 0rem auto;
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.2s;
+}
+@keyframes scroll-down {
+  from {
+    transform: rotate(0deg) translateY(-10px);
+  }
+  to {
+    transform: rotate(0deg) translateY(10px);
+  }
+}
+
+@keyframes scroll-up {
+  from {
+    transform: rotate(180deg) translateY(-10px);
+  }
+  to {
+    transform: rotate(180deg) translateY(10px);
+  }
+}
+
+.scroll-indicator {
+  position: fixed;
+  bottom: 3rem;
+  right: 8rem;
+  animation: scroll-down 1s infinite alternate;
+}
+.rotate {
+  animation: scroll-up 1s infinite alternate;
+}
+
+@media screen and (max-width: 64rem) {
+  .main-container {
+    flex-direction: column;
+  }
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .main-container {
+    padding: 0rem 1.5rem;
+  }
+}

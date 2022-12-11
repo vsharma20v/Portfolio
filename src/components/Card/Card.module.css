@@ -1,0 +1,84 @@
+.card {
+  margin: 2rem 0rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 66.6667%;
+  position: relative;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  border: 1px solid rgba(44, 44, 44, 0.08);
+  transition: all 0.2s;
+}
+
+.card-image {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  transform: translate(-1.5rem, -50%);
+  top: 0rem;
+  right: 0rem;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.card-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0rem;
+  transition: all 0.2s;
+}
+
+.card-name {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.card-technologies {
+  background: var(--bg-color);
+  padding: 0.5rem;
+  font-size: 14px;
+  text-align: left;
+  border: 1px solid rgba(44, 44, 44, 0.08);
+}
+
+.card-duration {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  margin: 0rem;
+}
+
+.card-body p {
+  text-align: justify;
+  color: rgb(63 72 82 / 90%);
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 80rem) {
+  .card {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 64rem) {
+  .card {
+    max-width: 32rem;
+    text-align: center;
+  }
+  .card-image {
+    left: calc(50% - 2rem);
+    transform: translate(0rem, -50%);
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .card {
+    padding: 2rem 1.5rem;
+  }
+  .card-heading {
+    font-size: 1rem;
+  }
+  /* .card-body p {
+    text-align: center;
+  } */
+}
