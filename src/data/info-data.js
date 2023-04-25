@@ -9,9 +9,23 @@ import host24Logo from "../assets/24host-logo.svg";
 import travlioLogo from "../assets/travlio-logo.svg";
 import bandLogo from "../assets/band-logo.svg";
 import pocketFMLogo from "../assets/pocket-fm-logo.webp";
+import tekionLogo from "../assets/tekion-logo.png";
 
 const infoData = {
   experience: [
+    {
+      id: 0,
+      logoAlt: "Tekion",
+      logoSrc: tekionLogo,
+      name: "Tekion",
+      Url: "https://tekion.com/",
+      role: "Software Engineer (Frontend)",
+      textColor: "#05deba",
+      duration: "March 2023 – Present",
+      aboutRolePara1:
+        "Working for finance & insurance team in Automotive Retail Cloud platform",
+      technologies: "React.js, Redux, SASS",
+    },
     {
       id: 1,
       logoAlt: "Pocket FM",
@@ -20,7 +34,7 @@ const infoData = {
       Url: "https://play.google.com/store/apps/details?id=com.radio.pocketfm",
       role: "Frontend Engineer",
       textColor: "#e51a4d",
-      duration: "November 2021 – Present",
+      duration: "November 2021 – March 2023",
       aboutRolePara1:
         "Developing Pocket Novel app & CMS tool to provide high-quality & multi-locale content",
       aboutRolePara2:
