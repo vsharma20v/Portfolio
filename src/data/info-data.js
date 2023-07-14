@@ -23,8 +23,10 @@ const infoData = {
       textColor: "#05deba",
       duration: "March 2023 – Present",
       aboutRolePara1:
-        "Working for finance & insurance team in Automotive Retail Cloud platform",
-      technologies: "React.js, Redux, SASS",
+        "Worked for the F&I team in the Tekion ARC module, revamped their UI with drag & drop functionality",
+      aboutRolePara2: "Integrated PNI & InchCape providers in F&I menu & F&I setup & implemented complex animations",
+      aboutRolePara3: "Developed nested comments & rollback template components",
+      technologies: "React.js, Redux, SASS, Lodash, Ant Design",
     },
     {
       id: 1,
@@ -36,11 +38,11 @@ const infoData = {
       textColor: "#e51a4d",
       duration: "November 2021 – March 2023",
       aboutRolePara1:
-        "Developing Pocket Novel app & CMS tool to provide high-quality & multi-locale content",
+        "Developed Pocket Novel application & internal CMS tool to provide high-quality & multi-locale content",
       aboutRolePara2:
-        "Working closely with the design team for building the design system & most optimum suitable UX",
+        "Worked closely with the design team for building the design system, WBP & the most optimum UX",
       aboutRolePara3:
-        "Improving developer experience by setting up best practices, PR & coding guidelines",
+        "Improved developer experience by setting up best practices, PR & coding guidelines",
       technologies: "React.js, Redux, Styled Components, Formik, Yup, Chart.js",
     },
     {
